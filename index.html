@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile partenert</title>
+    <link rel="stylesheet" href="modem designer/css/style.css">
+</head>
+
+<body>
+    <div id="toky">
+
+    </div>
+    <div class="interface-modem">
+        <div class=" container">
+            <div class="coque">
+                <div class="header">
+                    <div class="logo-and-social">
+                        <img src="modem designer/images/orange.jpg" class="logo" alt="">
+                        <img src="modem designer/images/ICONE SCHOL.png" class="sociaux" alt="">
+                        <img src="modem designer/images/process-icon-new.png" class="sociaux" alt="">
+                    </div>
+                    <div class="stat-connection">
+                        <div class="sms">
+                            <img src="modem designer/images/mail-black.png" alt="">
+                            <div>
+                                <span class="badge"><span>03</span></span>
+                            </div>
+
+                        </div>
+                        <button class="track-data"> <img src="modem designer/images/calendar-white.png"
+                                alt=""><span>Track Data Usage</span></button>
+                        <div class="wifi">
+                            <span class="wifi-beta">
+                                <b>WiFi</b>
+                                <small> BETA</small>
+                            </span>
+                            <button><img src="modem designer/images/shop-white.png" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="action-o-c">
+                        <button class="fn-reduire" title="Reduire cette fenetre">--</button>
+                        <button class="fn-close" title="Close le fenetre">X</button>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="interface">
+                        <div class="reseau-bar-show">
+                            <div class="bar">
+                                <p>3G</p>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <span class="miniature">
+                                    <operateur-reseau>
+                                        Orange
+                                    </operateur-reseau>
+                                    <time-actif>
+                                        12:56:67
+                                    </time-actif>
+                                </span>
+                            </div>
+                            <div class="btn-c-d">
+                                <button class="c-d">CONNECT</button>
+                            </div>
+                        </div>
+                        <div class="menu-navbar">
+                            <button><img src="modem designer/images/mail-white.png" alt=""></button>
+                            <button><img src="modem designer/images/info-white.png" alt=""></button>
+                            <button><img src="modem designer/images/phone-white.png" alt=""></button>
+                            <button><img src="modem designer/images/user-white.png" alt=""></button>
+                            <button><img src="modem designer/images/gear-white.png" alt=""></button>
+                            <button><img src="modem designer/images/cloud-white.png" alt=""></button>
+                            <button><img src="modem designer/images/shop-white.png" alt=""></button>
+                        </div>
+                    </div>
+                    <button class="change-fond"><img src="modem designer/images/action-black.png" alt=""></button>
+                </div>
+                <div class="footer">
+                    <button class="onlineshop">
+                        <div class="myzone">
+                            <img src="modem designer/images/shop-white.png" alt="">
+                            <span>My Zone</span>
+                        </div>
+                        <div class="blabla">
+                            <p>Huawei <span class="red">A</span>scend Smartphones</p>
+                        </div>
+                        <div class="phone-image">
+                            <img src="modem designer/images/phone_iphone5.png" alt="">
+                            <img src="modem designer/images/phone_galaxy3.png" alt="">
+                            <img src="modem designer/images/lumia_800.png" alt="">
+                            <img src="modem designer/images/phone_lumia920.png" alt="">
+                        </div>
+                        <div class="buyonline">
+                            <a>BUY ONLINE</a>
+                        </div>
+                    </button>
+                    <div class="navire">
+                        <button> <img src="modem designer/images/carat-l-white.png" alt=""></button>
+                        <button> <img src="modem designer/images/carat-r-white.png" alt=""></button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="fenetre-show" title="Ouvrir cette fenetre">
+                <span></span>
+            </div>
+        </div>
+        <div class="right-design">
+            <div class="gallerie">
+                <div class="item">
+                    <span>New</span>
+                    <img src="modem designer/images/nexus_7.png" alt="">
+                    <h5 class="nexus">Nexus_7</h5>
+                </div>
+                <div class="item">
+                    <span>New</span>
+                    <img src="modem designer/images/lumia_800.png" alt="">
+                    <h5>Lumia_800</caption>
+
+                </div>
+                <div class="item">
+                    <span>New</span>
+                    <img class="iphone" src="modem designer/images/phone_iphone5.png" alt="">
+                    <h5>Pho<small class="red">n e_ip hon</small>e 5</h5>
+
+                </div>
+            </div>
+            <div class="fenetre" title="Reduire cette fenetre">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="fn-reduirexx">
+        <div class="header-fnxx">
+            <button class="great"><img src="modem designer/images/action-black.png" alt="" title="Aggrandir cette fenetre"></button>
+            <button class="fn-close2" title="Close">X</button>
+        </div>
+    </div>
+    <script>
+        let picture = document.querySelector('.body')
+        let interface = document.querySelector('.right-design')
+        let btn = document.querySelector('.body button.change-fond')
+        let fenetre = document.querySelector('.fenetre')
+        let fenetre1 = document.querySelector('.fenetre-show')
+        let close = document.querySelector('.fn-close')
+        let close2 = document.querySelector('.fn-close2')
+
+        let reduire = document.querySelector('.fn-reduire')
+
+        let bar = document.querySelectorAll('.bar div')
+        let height = 6
+        for (let i = 0; i < bar.length; i++) {
+            bar[i].style.height = "" + height + "px"
+            height = height + 6
+        }
+        btn.addEventListener('mouseenter', () => {
+            // border-bottom-left-radius: 53px;
+            interface.style.borderBottomLeftRadius = "150px"
+        })
+        btn.addEventListener('mouseleave', () => {
+            // border-bottom-left-radius: 53px;
+            interface.style.borderBottomLeftRadius = "53px"
+        })
+        fenetre.addEventListener('click', () => {
+            interface.style.left = '-193px'
+            interface.style.transition = 'left .5s'
+            setTimeout(() => {
+                fenetre1.style.display = "block"
+            }, 300);
+        })
+        fenetre1.addEventListener('click', () => {
+            interface.style.left = 'initial'
+            interface.style.transition = 'left .5s'
+            fenetre1.style.display = "none"
+        })
+        close.addEventListener('click', () => {
+            document.querySelector('.interface-modem').remove()
+            document.querySelector('.fn-reduirexx').remove()
+            document.querySelector('.interface-modem').remove()
+        })
+        close2.addEventListener('click', () => {
+            document.querySelector('.fn-reduirexx').remove()
+        })
+        reduire.addEventListener('click', () => {
+            document.querySelector('.interface-modem').style.display = "none"
+            setTimeout(() => {
+                document.querySelector('.fn-reduirexx').style.display = "block"
+            }, 300);
+            let a = false
+            setTimeout(() => {
+                setInterval(() => {
+                    a ? document.querySelector('.fn-reduirexx').style.border = "2px solid red" : document.querySelector('.fn-reduirexx').style.border = "2px solid green"
+                    a = !a
+                }, 500);
+            }, 2000);
+        })
+        let great = document.querySelector('.great')
+        great.addEventListener('click', ()=>{
+            document.querySelector('.interface-modem').style.display = "flex"
+            document.querySelector('.fn-reduirexx').style.display = "none"
+        })
+    </script>
+</body>
+
+</html>

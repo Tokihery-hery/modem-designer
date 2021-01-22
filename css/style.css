@@ -1,0 +1,694 @@
+
+body {
+    background-image: url('../images/2019_16-inch_MacBook_Pro_(49183242933).webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contains;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.interface-modem {
+   margin: auto;
+   display: inherit;
+}
+
+.container {
+    height: 420px;
+    width: 737px;
+    background: rgb(255, 255, 255);
+    border-radius: 23px;
+    margin: auto;
+    position: relative;
+    z-index: 100;
+    box-shadow: rgb(152, 149, 155) 0 0 1px 1px;
+
+}
+
+.header {
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    background: inherit;
+    justify-content: space-between;
+}
+
+.body {
+    height: 288px;
+    width: auto;
+    margin: 7px 14px;
+    background: rgb(241, 238, 238);
+    border-radius: 17px;
+    position: relative;
+    /* padding: 5px; */
+    box-shadow: rgb(194, 190, 190) 0 0 2px 5px;
+}
+
+.body .interface {
+    height: 288px;
+    width: auto;
+    background-image: url("../images/node.jpg");
+    border-radius: 17px;
+    box-shadow: rgb(255, 255, 255) 0 0 2px 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 53px;
+    z-index: 140;
+
+}
+button{
+    cursor: pointer;
+}
+.body button.change-fond {
+    position: relative;
+    bottom: 60px;
+    left: -1px;
+    padding: 1px;
+    z-index: 0;
+    width: 58px;
+    height: 60px;
+    border: none;
+    /* margin: 23px; */
+    background: inherit;
+    border-bottom-left-radius: 23px;
+    border-top-right-radius: 60px;
+}
+
+.body button img {
+    position: relative;
+    height: 13px;
+    width: 10px;
+    display: flex;
+    margin: auto;
+
+}
+
+.body .interface::after {
+    content: " ";
+    border-top: 0px solid;
+    border-left: 34px solid transparent;
+    border-right: 34px solid transparent;
+    border-bottom: 17px solid rgb(194, 190, 190);
+    border-bottom-left-radius: 43%;
+    border-bottom-right-radius: 42%;
+    position: absolute;
+    transform: rotate(43deg);
+    bottom: 10px;
+    left: -12PX;
+
+}
+
+.logo-and-social,
+.stat-connection {
+    height: 55px;
+    background: inherit;
+}
+
+.logo-and-social {
+    border-top-left-radius: 23px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-and-social img {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: auto 2px;
+}
+
+.logo-and-social img.logo {
+    height: 43px;
+    width: 43px;
+}
+
+.logo-and-social img.sociaux {
+    height: 30px;
+    width: 30px;
+}
+
+.stat-connection {
+    display: flex;
+    border-top-right-radius: 23px;
+    width: 68%;
+    justify-content: flex-start;
+    margin-right: 11px;
+
+}
+
+.stat-connection img,
+.stat-connection button,
+.stat-connection div {
+    margin: 10px 31px;
+}
+
+.stat-connection button {
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+}
+
+.stat-connection button.track-data {
+    box-shadow: rgb(231, 225, 225) 0 0 2px 7px;
+    border-radius: 1px;
+    height: 28px;
+    margin: auto 0;
+    width: 175px;
+}
+
+.stat-connection button.track-data img,
+.stat-connection button span {
+    margin: auto 7px;
+    vertical-align: middle;
+}
+
+.wifi {
+    height: 28px;
+    background: rgb(233, 229, 229);
+    border-radius: 23px;
+    vertical-align: middle;
+    padding: 5px;
+    display: flex;
+    width: max-content;
+}
+
+.wifi span,
+.wifi button {
+    margin: auto 3px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.wifi span div {
+    color: red;
+    font-size: 9px;
+}
+
+.wifi button {
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    margin: auto;
+    width: 37px;
+    height: 37px;
+    position: relative;
+    margin-top: -5px;
+    margin-right: -5px;
+    box-shadow: #aaacad 0 0 1px 1px;
+
+}
+
+.wifi button img {
+    margin: auto;
+    display: flex;
+}
+
+.wifi .wifi-beta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wifi .wifi-beta small {
+    color: red;
+    font-size: 8px;
+    font-weight: bold;
+    text-align: end;
+}
+
+.sms {
+    position: relative;
+    display: flex;
+}
+
+.sms img {
+    height: 20px;
+    margin: 16px auto 0 auto;
+    width: 20px;
+    color: gray;
+}
+
+.sms div {
+    position: absolute;
+    top: -6px;
+    right: -46px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.sms .badge {
+    height: 28px;
+    border-radius: 50%;
+    box-shadow: rgb(135, 150, 165) 0 0 1px 1px;
+    background: #fff;
+    padding: 5px 2px;
+    position: relative;
+}
+
+.sms .badge span {
+    height: 17px;
+    margin: 2px auto;
+    background: rgb(172, 30, 30);
+    padding: 3px;
+    border-radius: 50%;
+    width: 21px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header .action-o-c {
+    position: absolute;
+    height: 16px;
+    background: inherit;
+    right: 21px;
+    padding: 7px 10px;
+    z-index: 100;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: black 0 0 2px 0;
+
+}
+
+.header .action-o-c button {
+    background: inherit;
+    border: none;
+    font-weight: bold;
+    margin: 0 3px;
+    font-size: 15px;
+}
+
+.header .action-o-c button:focus {
+    outline: none;
+    color: rgb(0, 25, 250);
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.bar div {
+    width: 4px;
+    background: rgb(253, 253, 253);
+    margin: 2px;
+    /* transform: rotate(90deg); */
+    vertical-align: middle;
+}
+
+.reseau-bar-show {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.reseau-bar-show .bar {
+    display: flex;
+    align-items: flex-end;
+}
+
+.reseau-bar-show p {
+    margin: 0 4px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.reseau-bar-show .c-d {
+    height: 56px;
+    padding: 14px;
+    background: rgb(57, 191, 224);
+    width: 160px;
+    margin-top: 12px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: rgb(105, 107, 119) 0 0 4px 2px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.reseau-bar-show>div {
+    margin: 20px;
+}
+
+.miniature {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    color: #fff;
+    line-height: 1;
+}
+
+operateur-reseau {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+time-actif {
+    font-size: 23px;
+}
+
+.menu-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.menu-navbar button {
+    height: 56px;
+    width: 57PX;
+    background: inherit;
+    border: none;
+    margin: 0 5px;
+}
+
+.menu-navbar button img {
+    height: 80%;
+    width: 80%;
+}
+
+.footer {
+    height: 50px;
+    width: auto;
+    margin: 14px 9px;
+    background: rgb(194, 190, 190);
+    border-radius: 23px;
+    box-shadow: rgb(172, 166, 166) 0 0 2px 2px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.footer .onlineshop {
+    height: 42px;
+    width: 93%;
+    background: #fff;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    margin: 4px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+
+.myzone {
+    height: 40px;
+    margin-left: -5px;
+    width: 100px;
+    background: rgb(45, 191, 228);
+    border-radius: 23px;
+    position: inherit;
+    box-shadow: rgb(172, 166, 166) 0 0 2px 2px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.myzone img {
+    height: 60%;
+    width: auto;
+    vertical-align: middle;
+    margin: auto 7px;
+    POSITION: relative;
+    TOP: -2px;
+}
+
+.myzone span {
+    vertical-align: middle;
+    font-weight: bold;
+    color: #fff;
+    align-items: baseline;
+}
+
+.blabla {
+    background: inherit;
+    margin: auto -65px;
+}
+
+.blabla p {
+    font-weight: bold;
+    font-size: 23px;
+    padding: 6.6px 0px;
+    margin: auto -3px;
+    font-family: 'serif';
+    color: rgba(65, 60, 60, 0.616) !important;
+}
+
+.blabla p span {
+    color: rgb(185, 15, 15);
+}
+
+.buyonline {
+    height: 30px;
+    background: rgb(143, 12, 12);
+    margin: auto 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.buyonline a {
+    color: #fff;
+    margin: 4px 10px;
+
+}
+
+.navire {
+    display: flex;
+    flex-direction: row;
+}
+
+.navire button {
+    border: none;
+    background: inherit;
+
+}
+
+.phone-image {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-right: -79px;
+}
+
+.phone-image img {
+    height: 34px;
+    width: auto;
+    margin: auto 3px;
+}
+
+.right-design {
+    margin: auto auto auto -7px;
+    height: 410px;
+    border-bottom-right-radius: 23px;
+    border-top-right-radius: 23px;
+    background: rgb(156, 150, 150);
+    width: 200px;
+    position: relative;
+    z-index: 0;
+    box-shadow: rgb(245, 245, 245) 0 0 2px 2px;
+    position: relative;
+    transition: all .5s;
+}
+
+.gallerie {
+    margin: 7px 7px 7px 20px;
+    background: inherit;
+    height: 396px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    height: 124px;
+    width: auto;
+    background: #fff;
+    margin: 4px 0;
+    position: relative;
+}
+
+.item img {
+    height: 100%;
+    width: 100%;
+}
+
+.item img.iphone {
+    display: flex;
+    justify-content: center;
+    height: 124px;
+    width: auto;
+    margin: auto;
+}
+
+.item span {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 1px 12px;
+    background: rgb(172, 30, 30);
+    position: absolute;
+    color: #fff;
+    transform: rotate(-45deg);
+    top: 5px;
+    left: -11px;
+}
+
+.item h5 {
+    position: absolute;
+    top: 96px;
+    /* display: flex; */
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    width: 140px;
+    background: cursive;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.item h5.nexus {
+    color: #fff;
+}
+
+.item small.red {
+    color: rgb(172, 30, 30);
+    font-size: 10px;
+
+}
+
+.item span::after {
+    content: " ";
+    height: 55px;
+    width: 8px;
+    background: rgb(156, 150, 150);
+    position: absolute;
+    transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -20.4px;
+    left: 40px;
+}
+
+.item span::before {
+    content: " ";
+    height: 31px;
+    width: 11px;
+    background: rgb(156, 150, 150);
+    position: absolute;
+    transform: rotate(45deg);
+    left: -4px;
+    top: -12px;
+}
+
+.fenetre {
+    height: 56px;
+    width: 34px;
+    background: rgb(255, 255, 255);
+    border-radius: 24PX 0px 1PX 28px;
+    position: absolute;
+    left: 166px;
+    bottom: 76px;
+    box-shadow: rgb(255, 255, 255) 0 0 2px 1px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.fenetre span {
+    position: inherit;
+    margin: 18px 7px;
+    border-bottom: 9px solid transparent;
+    border-right: 13px solid rgb(45, 191, 228);
+    border-top: 9px solid transparent;
+    transition: all .5s;
+}
+.fenetre-show {
+    height: 56px;
+    width: 34px;
+    background: rgb(255, 255, 255);
+    border-radius: 24PX 0px 1PX 28px;
+    position: absolute;
+    right: 1px;
+    bottom: 81px;
+    box-shadow: rgb(253, 253, 255) 0 0 2px 1px;
+    cursor: pointer;
+    display: none;
+}
+.fenetre-show:focus,
+.fenetre-show:active,
+.fenetre:focus .fenetre:active
+{
+    transition: left .5s;
+}
+.fenetre-show span {
+    position: inherit;
+    margin: 18px 13px;
+    border-bottom: 9px solid transparent;
+    border-left: 13px solid rgb(45, 191, 228);
+    border-top: 9px solid transparent;
+    transition: all .5s;
+}
+.fn-reduirexx {
+    height: 56px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 23px;
+    box-shadow: rgb(173, 168, 161) 0 0 4px 2px;
+    display: none;
+}
+.header-fnxx {
+    position: relative;
+    top: 9px;
+    display: flex;
+}
+
+.header-fnxx button {
+    margin: 2px 11px;
+}
+
+@media screen and (max-width: 944px) {
+    .right-design {
+        left: -193px;
+    }
+
+    .fenetre-show {
+        display: block;
+    }
+}
+#toky{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 9px solid red;
+    transform: rotate(10deg);
+}
+#toky::after{
+    content: " ";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 0 solid transparent;
+    border-top: 3px solid red;
+    border-radius: 20px 0 0 0;
+    left: -9px;
+    top: -12px;
+    transform: rotate(45deg);
+}
